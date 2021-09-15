@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "105329072419",
+    "project_id": "i-orbit",
+    "storage_bucket": "i-orbit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105329072419:android:1d21cd2bee1c58f25dd496",
+        "android_client_info": {
+          "package_name": "com.i_orbit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105329072419-2l51p5r0aqq9n8dug3d0rronbuj14ih6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i_orbit",
+            "certificate_hash": "e62629c7edc2c5444ce8a3fd5fe35746589017c2"
+          }
+        },
+        {
+          "client_id": "105329072419-dqlkc6cmpi6su10o7aom2ksqalduena4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvw7k9Vb-J3FhJ3OgyTFXb80_oXMZWOF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105329072419-dqlkc6cmpi6su10o7aom2ksqalduena4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
