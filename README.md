@@ -1,4 +1,6 @@
-# i_orbit
+# Vision Therapy Application
+#The application was created to aid ophthalmologists and optometrists in making accurate management of amblyopia & accommodative anomalies through a variety of application-based activities for rehabilitation,Other sensory visual capabilities such as contrast sensitivity, colour vision, and fixation pattern are also assessed.
+#The unique polaroised therapy for the treatment of suppression and amblyopia
 
 A new Flutter application.
 
