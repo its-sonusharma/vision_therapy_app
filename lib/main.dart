@@ -31,7 +31,7 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 5), ()=> Navigator.pushReplacement(context,
-        MaterialPageRoute(builder: (context) => HomePage(),
+        MaterialPageRoute(builder: (context) =>  // Remove comment to run this application// HomePage(),
         )
     )
     );
