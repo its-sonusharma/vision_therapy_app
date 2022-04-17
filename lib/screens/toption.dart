@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:i_orbit/screens/therapy.dart';
+import 'package:i_orbit/screens/therapy_one.dart';
+
+import 'home.dart';
 
 class TOption extends StatefulWidget {
 
@@ -40,17 +42,17 @@ class _TOptionState extends State<TOption> {
                                 Text('Read Instructions Carefully ',style: TextStyle(
                                     color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 20
                                 ),),
-                                Text('Read Instructions Carefully ',style: TextStyle(
-                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 20
+                                Text('Read the Whole letters with time ',style: TextStyle(
+                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 15
                                 ),),
-                                Text('Read Instructions Carefully ',style: TextStyle(
-                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 20
+                                Text('Wear the 3D glass before start ',style: TextStyle(
+                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 15
                                 ),),
-                                Text('Read Instructions Carefully ',style: TextStyle(
-                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 20
+                                Text('Drag & select the level below  ',style: TextStyle(
+                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 15
                                 ),),
-                                Text('Read Instructions Carefully ',style: TextStyle(
-                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 20
+                                Text('Select & Start Therapy  ',style: TextStyle(
+                                    color: Colors.black54,fontWeight: FontWeight.bold,fontSize: 15
                                 ),),
                               ],
                             ),

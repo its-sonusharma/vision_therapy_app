@@ -50,7 +50,6 @@ class _InfoState extends State<Info> {
                       style: ParaStyle,softWrap: true,textScaleFactor: 1.025,
                     ),
                     SizedBox(height: 15,),
-
                     Text("Suppression is never normal and always indicates a problem with the visual system."
                       "Vision therapy encourages the eyes to operate together, but both eyes must be “on” to do so.",
                     style: ParaStyle,softWrap: true,textScaleFactor: 1.025,),

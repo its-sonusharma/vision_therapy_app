@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.i_orbit">
    <application
-        android:label="i_orbit"
+        android:label="squinture"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

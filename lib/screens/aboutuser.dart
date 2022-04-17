@@ -74,22 +74,22 @@ class _AboutUserState extends State<AboutUser> {
                           mainAxisSize: MainAxisSize.max,
                           children: <Widget>[
                             CircleAvatar(
-                              backgroundImage: NetworkImage(
+                              /*backgroundImage: NetworkImage(
                                 user.photoURL,
-                              ),
+                              ),*/
                               radius: 60,
-                              backgroundColor: Colors.transparent,
+                              backgroundImage: AssetImage("assets/profile.png"),
                             ),
                             SizedBox(height: 10,),
-                            Text(
-                              user.displayName,
+                            Text("Raman Ravi",
+                              //user.displayName,
                               style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black54),
                             ),
-                            Text(
-                              user.email,
+                            Text("raman123@gmail.com",
+                              //user.email,
                               style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -111,7 +111,7 @@ class _AboutUserState extends State<AboutUser> {
                           child: DataTable(
                             columns: [
                               DataColumn(
-                                label: Text("Select level",style: TextStyle(fontWeight: FontWeight.bold),),
+                                label: Text("Selected level",style: TextStyle(fontWeight: FontWeight.bold),),
                                 numeric: false,
                               ),
                               DataColumn(
@@ -153,7 +153,6 @@ class _AboutUserState extends State<AboutUser> {
               ],
             )
         ),
-
       );
     }
   }

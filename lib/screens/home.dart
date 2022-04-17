@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:i_orbit/components/constants.dart';
+import 'package:i_orbit/components/loadjson.dart';
 import 'package:i_orbit/screens/aboutdev.dart';
 import 'package:i_orbit/screens/aboutuser.dart';
-import 'package:i_orbit/screens/contactus.dart';
+import 'package:i_orbit/screens/therapy_menu.dart';
 import 'package:i_orbit/screens/tinfo.dart';
-import 'package:i_orbit/screens/toption.dart';
-import 'package:i_orbit/screens/tutorial.dart';
-
 import 'ishiharachart.dart';
 
 class Home extends StatefulWidget {
@@ -58,6 +56,11 @@ class _HomeState extends State<Home> {
                           },
                             child: Icon(Icons.account_circle,size: 30.0,color: Colors.white),
                           ),
+                          InkWell(onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutDev()));
+                          },
+                            child: Icon(Icons.info,size: 30.0,color: Colors.white),
+                          ),
                         ],
                       ) ,
                     ),
@@ -81,7 +84,6 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   )),
-
                   SizedBox(height: size.height*.02),
                   Expanded(flex: 04,
                     child: GridView.count(
@@ -90,7 +92,7 @@ class _HomeState extends State<Home> {
                       children: [
                         InkWell(borderRadius: BorderRadius.circular(25.0),
                           onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>TOption()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>TherapyMenu()));
                         },
                           child: Card(color: Colors.transparent,shadowColor: Colors.transparent,
                             elevation: 10,
@@ -102,7 +104,7 @@ class _HomeState extends State<Home> {
                         ),
                         InkWell(borderRadius: BorderRadius.circular(25.0),
                           onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Ttutorial()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>LoadJson()));
                         },
                           child: Card(color: Colors.transparent,shadowColor: Colors.transparent,
                             elevation: 10,
@@ -136,30 +138,6 @@ class _HomeState extends State<Home> {
                               fit: BoxFit.contain,),
                           ),
                         ),
-                        InkWell(borderRadius: BorderRadius.circular(25.0),
-                          onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactUs()));
-                        },
-                          child: Card(color: Colors.transparent,shadowColor: Colors.transparent,
-                            elevation: 10,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(cardRadius)),
-                            child: Image.asset('assets/reach.png',
-                              fit: BoxFit.contain,),
-                          ),
-                        ),
-                        InkWell(borderRadius: BorderRadius.circular(25.0),
-                          onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutDev()));
-                          },
-                          child: Card(color: Colors.transparent,shadowColor: Colors.transparent,
-                            elevation: 10,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(cardRadius)),
-                            child: Image.asset('assets/aboutus.png',
-                              fit: BoxFit.contain,),
-                          ),
-                        ),
                       ],
                     ),
                   ),
@@ -170,6 +148,5 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-
   }
 }

@@ -2,8 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:i_orbit/screens/home.dart';
 import 'package:i_orbit/screens/welcome/signscreen.dart';
-
 import 'components/db.dart';
 
 
@@ -16,7 +16,6 @@ void main() async {
 
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      fontFamily: "Baskerville",
       visualDensity: VisualDensity.adaptivePlatformDensity,
     ),
     home: MainPage(),
@@ -31,7 +30,7 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 5), ()=> Navigator.pushReplacement(context,
-        MaterialPageRoute(builder: (context) => HomePage(),
+        MaterialPageRoute(builder: (context) => Home(),
         )
     )
     );

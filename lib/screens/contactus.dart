@@ -17,7 +17,7 @@ class ContactUs extends StatelessWidget {
         backgroundColor:  Color(0xFF317C84),
         title:  Column(
           children: [
-            Text("Contact i-Orbit",style: TextStyle(
+            Text("Contact Sqinture",style: TextStyle(
                 color: Colors.black38,fontWeight: FontWeight.bold,fontSize: 30
             ),),
             Text("Way to Reach Us")
@@ -45,7 +45,7 @@ class ContactUs extends StatelessWidget {
                         child:Row(mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("Phone : ",style: textStyle,),
-                            Text("+91-9871259660/+91-8287546506"),
+                            Text("+91-9205900560/+91-7011557731"),
                           ],
                         )
                     ),
@@ -53,7 +53,7 @@ class ContactUs extends StatelessWidget {
                         child:Row(mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("Address : ",style: textStyle,),
-                            Text("Amity University Haryana,122413"),
+                            Text(" HMR Institute of Technology\n & Management"),
                           ],
                         )
                     ),
@@ -77,46 +77,6 @@ class ContactUs extends StatelessWidget {
                   ),
                 ),
             ))),
-            Expanded(flex:2,child: LayoutBuilder(
-              builder: (context,constraints) =>Container(height: size.height*.2,
-                child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      child: InkWell(onTap: (){
-                        Share.share("https://www.facebook.com/I-Orbit-100198599072454");
-                      },
-                        child: SvgPicture.asset(
-                          "assets/facebook.svg",
-                          height: 50,width: 50,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      child: SizedBox(height: 45,width: 150,
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Color(0xFF317C84)),
-                          ),
-                          child: Text("Reach-us"),
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactForm()));
-                          },
-                        ),
-                      ),),
-                    Container(
-                      child: InkWell(onTap: (){
-                        Share.share('https://www.instagram.com/i_orbit_2021?r=nametag');
-                      },
-                        child: SvgPicture.asset(
-                          "assets/instagram.svg",
-                          height: 50,width: 50,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            )),
           ],
         ),
       ),
