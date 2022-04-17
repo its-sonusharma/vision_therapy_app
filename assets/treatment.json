@@ -1,0 +1,204 @@
+[
+  {
+    "Fruit": "Red berries",
+    "About": "Red berries are tiny red fruits packed with antioxidants and powerful medicinal properties. They’re not only great for adding a pop of color to your plate but also delicious and full of flavor.These berries are often sold powdered or dried. They’re added to many supplements and juice blends.They’re a great source of nutrients, including vitamins and minerals. Just 5 tablespoons (28 grams) of dried goji berries pack",
+    "Calories": "98",
+    "Protein": "4 grams",
+    "Fat": "0.1 grams",
+    "Carbs": "21.6grams",
+    "Fiber": "3.6 grams",
+    "Sugar": "21.8 grams",
+    "Vitamin A": "501% of the DV",
+    "Vitamin C": "15% of the DV",
+    "Iron": "11% of the Daily Value DV"
+	},
+	
+	
+    
+  {
+    "Fruit": "Kiwi",
+    "About": "Macular degeneration is the leading cause of vision loss, and kiwis might help protect your eyes from it. One study found that by eating three servings of fruit a day, macular degeneration was decreased by 36 percent.Here’s the nutritional breakdown for one kiwifruit, about 69 grams (g)",
+    "Calories": "42 ",
+    "Protein": "8 g of protein, or 2 percent DV",
+    "Fiber": "1 g , or 8 percent DV",
+    "Sugar": "2 g ",
+    "Vitamin A": "1 percent DV",
+    "Vitamin C": "64 mg , or 107 percent DV",
+    "Vitamin E": "1 mg , or 5 percent DV"
+  
+  },
+ 
+  {
+    "Fruit": "Orange",
+    "About": "Oranges and other citrus fruit contain vitamin C, which is key for eye health. The vitamin, found mainly in fresh fruits and vegetables, contributes to healthy blood vessels in your eyes. It can combat the development of cataracts, and in combination with other vitamins and nutrients, age-related macular degeneration.Here are the nutrients in about half of a large orange (100 grams) ",
+    "Calories": "53",
+    "Protein": "0.9 grams",
+    "Fat": "0.6 grams",
+    "Carbs": "11.8 grams",
+    "Fiber": "1.6 grams",
+    "Sugar": ": 9.5 grams",
+    "Vitamin A": "0%DV",
+    "Vitamin C": "88%DV",
+	"Zinc":"1% DV"
+    
+  },
+   {
+    "Fruit": "Guava",
+    "About": "Guava and other citrus fruit contain vitamin C, which is key for eye health. The vitamin, found mainly in fresh fruits and vegetables, contributes to healthy blood vessels in your eyes. It can combat the development of cataracts, and in combination with other vitamins and nutrients, age-related macular degeneration.Here are the nutrients in about half of a large guava (100 grams) ",
+    "Calories": "67",
+    "Protein": "0.9 grams",
+    "Fat": "0.9 grams",
+    "Carbs": "14.4 grams",
+    "Fiber": "5.4 grams",
+    "Sugar": ":8.9 grams",
+    "Vitamin A": "12%DV",
+    "Vitamin C": "381%DV",
+	"Zinc":"2%DV"
+    
+  },
+   {
+    "Fruit": "Grapefruit",
+    "About": "Grapefruit and other citrus fruit contain vitamin C, which is key for eye health. The vitamin, found mainly in fresh fruits and vegetables, contributes to healthy blood vessels in your eyes. It can combat the development of cataracts, and in combination with other vitamins and nutrients, age-related macular degeneration.Here are the nutrients in about  (100 grams)",
+    "Calories": "32",
+    "Protein": "0.6 grams",
+    "Fat": "0.1 grams",
+    "Carbs": "8.1 grams",
+    "Fiber": "1.1 grams",
+    "Sugar": ": 7 grams",
+    "Vitamin A": "19% DV",
+    "Vitamin C": "57% DV",
+	"Iron": "1% DV"
+    
+  },
+   
+   {
+    "Fruit": "Sweet patatoes",
+    "About": "Sweet potatoes are rich in vitamin A, beta-carotene, potassium, and fiber, just like carrots, so they're also good for your eye health. The sweet flavor makes sweet potatoes a hit at mealtime, so it's easy to get all that good nutrition into your diet, even if you're a picky eater.Here are the nutrients in about Serving Size 133 grams",
+    "Calories": "114",
+    "Protein": "2.1 grams",
+    "Fat": "0.1 grams",
+    "Carbs": "26.7 grams",
+    "Fiber": "4 grams",
+    "Sugar": "5.5 grams",
+    "Vitamin A": "376 DV",
+    "Vitamin C": "5% DV",
+	"Iron": "4% DV"
+    
+  },
+  {
+    "Fruit": "Tomato",
+    "About": "Tomatoes are a rich source of lycopene, lutein, and beta-carotene. These are powerful antioxidants & protected against light-induced damage, the development of cataracts, and age-related macular degeneration (AMD).Here are the nutrients in about Serving Size 91 grams",
+    "Calories": "16",
+    "Protein": "0.8 grams",
+    "Fat": "0.2 grams",
+    "Carbs": "3.5 grams",
+    "Fiber": "1.1grams",
+    "Sugar": "2.3 grams",
+    "Vitamin A": "15% DV",
+    "Vitamin C": "19%DV",
+	"Iron": "1% DV"
+    
+  },
+  
+  {
+    "Fruit": "Carrot",
+    "About": "Carrots are rich in beta-carotene, which the body utilizes to produce Vitamin A. They are good for lowering cholesterol levels and yes, for improving vision. Vitamin A helps the eye convert light to a signal sent to the brain, allowing you to see better in low light.Here are the nutrients in about Serving Size 128 grams",
+    "Calories": "52",
+    "Protein": "1.2 grams",
+    "Fat": "0.3 grams",
+    "Carbs": "12.3 grams",
+    "Fiber": "3.6 grams",
+    "Sugar": "5.8 grams",
+    "Vitamin A": "430% DV",
+    "Vitamin C": "13% DV",
+	"Iron": "2% DV"
+    
+  },
+  {
+    "Fruit": "Spinach",
+    "About": "One natural and delicious way to receive important nutrients for the eyes is to include spinach in our diet. Spinach contains lutein and zeaxanthin, which have a generous amount of powerful antioxidants needed for lowering the risk of developing macular degeneration.Here are the nutrients in about Serving Size 30 grams",
+    "Calories": "7",
+    "Protein": "0.9grams",
+    "Fat": "0.1 grams",
+    "Carbs": "1.1 grams",
+    "Fiber": "0.7 grams",
+    "Sugar": "0.1 grams",
+    "Vitamin A": "56% DV",
+    "Vitamin C": "14% DV",
+	"Iron": "5% DV"
+    
+  },
+  {
+    "Fruit": "Avocados",
+    "About": "An avocado is rich in antioxidant vitamins A and E, carotenoids lutein and zeaxanthin, as well as minerals like zinc, which all promote overall eye health. Studies show a diet high in antioxidants can help prevent cataracts, a common cause of cloudy vision, and age-related macular degeneration (AMD), which destroys a person’s sharp central vision. Here are the nutrients in about Serving Size 150 grams",
+    "Calories": "240",
+    "Protein": "3 grams",
+    "Fat": "22 grams",
+    "Carbs": "12.8 grams",
+    "Fiber": "10.1 grams",
+    "Sugar": "1 grams",
+    "Vitamin A": "4% DV",
+    "Vitamin C": "25% DV",
+	"Iron": "4% DV"
+    
+  },
+   {
+    "Fruit": "Broccoli",
+    "About": "An antioxidant found in broccoli may be a powerful force in preventing blindness.Broccoli is packed full of lutein and zeaxanthin. These are two of the most important nutrients that your eyes can have because of the ability to prevent oxidation of the retina and age-related degeneration.Here are the nutrients in about Serving Size 91grams",
+    "Calories": "31",
+    "Protein": "2.6grams",
+    "Fat": "0.3 grams",
+    "Carbs": "6 grams",
+    "Fiber": "2.4 grams",
+    "Sugar": "1.5 grams",
+    "Vitamin A": "11% DV",
+    "Vitamin C": "135% DV",
+	"Iron": "4% DV"
+    
+  },
+  {
+    "Fruit": "Peanut",
+    "About": "Peanuts that are good for the eyes. Nuts are rich in omega-3 fatty acids and vitamin E, which boost your eye health and protect the eye’s cells from “free radicals” that could break down the eye’s tissue8. You need that outer layer of tissue to serve as a protective barrier for your eyeball, so go ahead: go nuts! Here are the nutrients in about Serving Size 146 grams",
+    "Calories": "828",
+    "Protein": "37.7 grams",
+    "Fat": "71.9 grams",
+    "Carbs": "23.6grams",
+    "Fiber": "12.4grams",
+    "Sugar": "5.8 grams",
+    "Vitamin A": "0% DV",
+    "Vitamin C": "0% DV",
+	"Iron": "37% DV"
+    
+  },
+ 
+  {
+    "Fruit": "Almonds",
+    "About": "Almonds that are good for the eyes. Nuts are rich in omega-3 fatty acids and vitamin E, which boost your eye health and protect the eye’s cells from “free radicals” that could break down the eye’s tissue8. You need that outer layer of tissue to serve as a protective barrier for your eyeball, so go ahead: go nuts! Here are the nutrients in about Serving Size 95 grams",
+    "Calories": "549",
+    "Protein": "20.4 grams",
+    "Fat": "47.8 grams",
+    "Carbs": "18.8 grams",
+    "Fiber": "7.8 grams",
+    "Sugar": "4.7grams",
+    "Vitamin A": "0% DV",
+    "Vitamin E": "110% DV",
+	"Iron": "4% DV"
+    
+   },
+   {
+    "Fruit": "Sunflower seed",
+    "About": "Sunflower seeds are rich in vitamin E. This powerful antioxidant vitamin helps maintain good eyesight because it decreases the risk of age-related macular degeneration and cataracts. Here are the nutrients in about Serving Size 144grams",
+    "Calories": "821",
+    "Protein": "32.8 grams",
+    "Fat": "71.4grams",
+    "Carbs": "27grams",
+    "Fiber": "15.1grams",
+    "Sugar": "3.8grams",
+    "Vitamin A": "1% DV",
+	"Vitamin C": "3% DV",
+    "Vitamin E": "178% DV",
+	"Iron": "5% DV"
+    
+  }
+
+]
