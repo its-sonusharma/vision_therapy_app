@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:i_orbit/components/constants.dart';
-import 'package:i_orbit/components/loadjson.dart';
 import 'package:i_orbit/screens/aboutdev.dart';
 import 'package:i_orbit/screens/aboutuser.dart';
 import 'package:i_orbit/screens/therapy_menu.dart';
 import 'package:i_orbit/screens/tinfo.dart';
+import 'package:i_orbit/screens/treatment_menu.dart';
 import 'ishiharachart.dart';
 
 class Home extends StatefulWidget {
@@ -104,7 +104,7 @@ class _HomeState extends State<Home> {
                         ),
                         InkWell(borderRadius: BorderRadius.circular(25.0),
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>LoadJson()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>TreatmentMenu()));
                         },
                           child: Card(color: Colors.transparent,shadowColor: Colors.transparent,
                             elevation: 10,

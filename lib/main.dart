@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:i_orbit/screens/home.dart';
-import 'package:i_orbit/screens/welcome/signscreen.dart';
 import 'components/db.dart';
 
 

@@ -1,78 +1,133 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:video_player/video_player.dart';
+import 'package:i_orbit/screens/tresult.dart';
+import 'package:simple_timer/simple_timer.dart';
 
-
-
-import 'dart:async';
-
-class VideoPlayerScreen extends StatefulWidget {
-  VideoPlayerScreen({Key key}) : super(key: key);
+class Therapy2 extends StatefulWidget {
+  Therapy2({Key key, this.title,this.selectedImage,}) : super(key: key);
+  final String title;
+  final String selectedImage;
 
   @override
-  _VideoPlayerScreenState createState() => _VideoPlayerScreenState();
+  _Therapy2State createState() => _Therapy2State();
 }
 
-class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
-  VideoPlayerController _controller;
-  Future<void> _initializeVideoPlayerFuture;
+class _Therapy2State extends State<Therapy2> with TickerProviderStateMixin{
+
+  AnimationController controller;
+
+  Duration _duration;
+  TimerController _timerController;
+  TimerStyle _timerStyle = TimerStyle.ring;
+  TimerProgressIndicatorDirection _progressIndicatorDirection = TimerProgressIndicatorDirection.clockwise;
+  TimerProgressTextCountDirection _progressTextCountDirection = TimerProgressTextCountDirection.count_up;
 
   @override
   void initState() {
-    _controller = VideoPlayerController.network(
-      'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
-    );
-    _initializeVideoPlayerFuture = _controller.initialize();
-
-    _controller.setLooping(true);
-
+    // TODO: implement initState
+    _timerController = TimerController(this);
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-
-    super.dispose();
+    controller = AnimationController(
+      duration: Duration(minutes: 8),
+      vsync: this,
+    );
+    controller.forward();
+    controller.addListener(() {
+      setState(() {
+        print(controller.value);
+      });
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('GeeksForGeeks'),
-        backgroundColor: Colors.green,
-      ),
-      body: FutureBuilder(
-        future: _initializeVideoPlayerFuture,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done) {
-            return AspectRatio(
-              aspectRatio: _controller.value.aspectRatio,
-              child: VideoPlayer(_controller),
-            );
-          } else {
-            return Center(child: CircularProgressIndicator());
-          }
-        },
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            // pause
-            if (_controller.value.isPlaying) {
-              _controller.pause();
-            } else {
-              // play
-              _controller.play();
-            }
-          });
-        },
-        // icon
-        child: Icon(
-          _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
+    Size screenSize = MediaQuery.of(context).size;
+    return WillPopScope(
+      onWillPop: () =>Future.value(false),
+      child: Scaffold(
+        backgroundColor: Colors.teal[50],
+        body: Container(
+          child: Column(
+            children: [
+              SafeArea(
+                child: Container(
+                  height: 80,width: 80,margin: EdgeInsets.only(left: screenSize.width*.8),
+                  child: Center(
+                    child: SimpleTimer(
+                      duration:  Duration(minutes: 20),
+                      controller: _timerController,
+                      timerStyle: _timerStyle,
+                      onStart: handleTimerOnStart,
+                      onEnd: handleTimerOnEnd,
+                      valueListener: timerValueChangeListener,
+                      backgroundColor: Colors.teal[50],
+                      progressIndicatorColor: Colors.red.withOpacity(controller.value),
+                      progressIndicatorDirection: _progressIndicatorDirection,
+                      progressTextCountDirection: _progressTextCountDirection,
+                      progressTextStyle: TextStyle(color: Colors.black,fontSize: 18),
+                      strokeWidth: 5,
+                    ),
+                  ),
+                ),
+              ),
+              Container(height: screenSize.height*.6,decoration: BoxDecoration(
+
+                  image: DecorationImage(
+                    image: AssetImage(widget.selectedImage),
+                  )
+              ),
+                margin: EdgeInsets.all(1.0),
+              ),
+              Container(
+                child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+
+                    SizedBox(height: 50,width: 130,
+                      child: ElevatedButton(onPressed: _timerController.start,
+                        style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green),
+                        ),
+                        child: Text("Start Therapy", style: TextStyle(color: Colors.white)),
+                      ),
+                    ),
+                    SizedBox(height: 50,width: 130,
+                      child: ElevatedButton(onPressed: (){
+                        if(_duration.toString().substring(2,7)==null)
+                        {
+                          print("Not in Range");
+                        }
+                        else
+                        {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Result(
+                            timeTakenInmin: _duration.toString().substring(2,7),
+                            selectedLevel: widget.title,)));
+                        }
+                      },
+                        style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.red),
+                        ),
+                        child: Text("End Therapy", style: TextStyle(color: Colors.white)),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
+
+  void timerValueChangeListener(Duration timeElapsed) {
+    _duration = timeElapsed;
+    print(_duration);
+  }
+
+  void handleTimerOnStart() {
+    print("timer has just started");
+  }
+
+  void handleTimerOnEnd() {
+    print("timer has ended");
+  }
 }
+
+

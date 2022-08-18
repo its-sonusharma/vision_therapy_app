@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:i_orbit/components/db.dart';
-import 'package:i_orbit/screens/welcome/loggedin.dart';
-
 class AboutUser extends StatefulWidget {
   @override
   _AboutUserState createState() => _AboutUserState();
@@ -81,14 +79,14 @@ class _AboutUserState extends State<AboutUser> {
                               backgroundImage: AssetImage("assets/profile.png"),
                             ),
                             SizedBox(height: 10,),
-                            Text("Raman Ravi",
+                            Text("Amit Shukla",
                               //user.displayName,
                               style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black54),
                             ),
-                            Text("raman123@gmail.com",
+                            Text("Amit123@gmail.com",
                               //user.email,
                               style: TextStyle(
                                   fontSize: 15,

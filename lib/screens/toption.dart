@@ -2,10 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:i_orbit/screens/therapy_one.dart';
 
-import 'home.dart';
 
 class TOption extends StatefulWidget {
-
   @override
   _TOptionState createState() => _TOptionState();
 }
@@ -91,7 +89,7 @@ class _TOptionState extends State<TOption> {
                     child:SizedBox(height: 50,width: 200,
                       child: ElevatedButton(onPressed: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>Therapy(title:sliderDiscreteValue.round() == 0 ? "Easy" :"Hard",
-                          selectedImage: sliderDiscreteValue.round() == 0 ? "assets/slideimg/level1.jpg":"assets/slideimg/level2.jpg",)));
+                          selectedImage: sliderDiscreteValue.round() == 0 ? "assets/slideimg/tp1.gif":"assets/slideimg/tp1.gif",)));
                       },style : ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(Color(0xFF317C84))
                       ),child: Text("Select"),
@@ -99,10 +97,7 @@ class _TOptionState extends State<TOption> {
                     ),
                   ),
                 ),
-              )),
-
-
-
+              ))
             ],
           ),
         )

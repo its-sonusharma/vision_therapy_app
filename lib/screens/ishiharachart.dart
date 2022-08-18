@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 class Ishihra extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
+    List<String> litems = ["assets/plates/IshiharaTestPlates_page-0001.jpg","assets/plates/IshiharaTestPlates_page-0002.jpg",
+      "assets/plates/IshiharaTestPlates_page-0003.jpg","assets/plates/IshiharaTestPlates_page-0004.jpg","assets/plates/IshiharaTestPlates_page-0006.jpg",
+      "assets/plates/IshiharaTestPlates_page-0005.jpg","assets/plates/IshiharaTestPlates_page-0007.jpg","assets/plates/IshiharaTestPlates_page-0008.jpg",
+      "assets/plates/IshiharaTestPlates_page-0009.jpg","assets/plates/IshiharaTestPlates_page-0010.jpg"
+    ];
     return Scaffold(
         appBar: AppBar(
           toolbarHeight: 150,
@@ -20,8 +26,31 @@ class Ishihra extends StatelessWidget {
           elevation: 10, shadowColor:Color(0xFF317C84) ,
         ),
         backgroundColor: Colors.teal[50],
-        body:SafeArea(
-          child:SingleChildScrollView(
+        body:LayoutBuilder(
+          builder: (context,constraints) => Container(
+            child: Swiper(
+              itemBuilder: (BuildContext context, int index) {
+                return Container(decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                        image:AssetImage(litems[index]),fit: BoxFit.fitWidth
+                    )
+                ));
+              },
+              itemCount: 10,
+              viewportFraction:0.90,
+              scale: 0.8,
+              autoplay: true,
+              pagination:SwiperPagination(),
+            ),
+          ),
+        ),
+      /*SafeArea(
+          child:
+
+
+
+          *//*SingleChildScrollView(
             child: Column(
               children: [
                 Container(
@@ -236,8 +265,8 @@ class Ishihra extends StatelessWidget {
 
               ],
             ),
-          ),
-        )
+          ),*//*
+        )*/
     );
   }
 }
