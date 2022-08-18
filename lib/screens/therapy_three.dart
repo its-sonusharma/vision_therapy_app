@@ -114,6 +114,8 @@ class _Therapy3State extends State<Therapy3> with TickerProviderStateMixin{
       ),
     );
   }
+
+
   void timerValueChangeListener(Duration timeElapsed) {
     _duration = timeElapsed;
     print(_duration);
